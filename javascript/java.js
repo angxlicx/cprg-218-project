@@ -21,8 +21,17 @@ var acc = document.getElementsByClassName("accordion");
     });
   }
 
+// the alertbutton
+var button = document.getElementById('alertButton');
+
+button.addEventListener('click', function() {
+
+  alert('go to my contact page!');
+});
+
 /*footer copyright*/
 document.addEventListener('DOMContentLoaded', function() {
   var currentYear = new Date().getFullYear();
   document.getElementById('copyright').innerHTML = '&copy; ' + currentYear + ' Kelly Hoang. All rights reserved.';
 });
+

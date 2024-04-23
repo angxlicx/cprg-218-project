@@ -1,5 +1,31 @@
+/*  http://meyerweb.com/eric/tools/css/reset/ 
+    v2.0 | 20110126
+    License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
 body {
     background-color: #dddad2;
+    
   }
 
 /*hero*/
@@ -32,7 +58,7 @@ body {
 }
 
 .hero-text {
-  font-family: "Madimi One", sans-serif;   
+  font-family: "Patrick Hand", cursive;
   font-weight: 400;   
   font-style: normal;
   text-align: center;
@@ -41,7 +67,7 @@ body {
   left: 50%;
   transform: translate(-50%, -50%);
   color: #2c1c30;
-  font-size: 30px;
+  font-size: 45px;
   }
 
 /*navbar*/
@@ -49,6 +75,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-around;
+  font-size: 20px;
   padding: 40px;
   text-align: center;
   color: #1f1738;
@@ -98,7 +125,7 @@ font-style: normal;
   text-transform: capitalize;
   margin-bottom: 20px;
   margin-left: 60px;
-  font-family: "Albert Sans", sans-serif;
+  font-family: "Patrick Hand", cursive;
   font-weight: 300;
   font-style: normal;
 }
@@ -109,7 +136,7 @@ font-style: normal;
   line-height: 28px;
   font-size: 18px;
   margin-bottom: 45px;
-  font-family: "Albert Sans", serif;
+  font-family: "Inter Tight", sans-serif;
 }
 
 .contactbutton {
@@ -143,7 +170,7 @@ font-style: normal;
   padding: 30px; 
   background-color: #e7e3d8;
   color: #30202a;
-  font-family: "Albert San", serif;
+  font-family: "Patrick Hand", cursive;
 }
 
 .card {
@@ -208,14 +235,21 @@ font-style: normal;
   padding: 30px; 
   background-color: #e7e3d8;
   color: #30202a;
-  font-family: "Albert San", serif;
+  font-family: "Patrick Hand", cursive;
 
+}
+
+.vid-container {
+  display: flex;
+  flex-wrap: wrap; /* Allow cards to wrap onto new rows if necessary */
+  justify-content: center; /* Center the video cards horizontally */
 }
 
 .vid-card {
   display: flex;
   flex-direction: column;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
+  justify-content: center;
   width: 100%;
   max-width: 600px;
   border: 1px solid #ffffff;
@@ -239,7 +273,6 @@ font-style: normal;
   left: 0;
   width: 100%;
   height: 100%;
-
 }
 
 .card-content {
@@ -248,6 +281,8 @@ font-style: normal;
 
 .card-content h3 {
   margin-top: 0;
+  font-size: 18px;
+  font-weight: bold;
 }
 
 .card-content p {
@@ -270,12 +305,12 @@ font-style: normal;
       
   #accordion h3 {
     text-align: center;
-    font-size: 25px;
+    font-size: 35px;
     margin: 0; 
     padding: 10px; 
     background-color: #e7e3d8;
     color: #30202a;
-    font-family: "Albert San", serif;
+    font-family: "Patrick Hand", cursive;
 }
       
   .active, .accordion:hover {
@@ -293,15 +328,16 @@ font-style: normal;
   
 
   /*footer*/
+
 .footer-container {
   display: flex;
-  flex-direction: column; 
+  flex-direction: column;
   justify-content: space-around;
   align-items: center;
   background-color: #8e8b81;
   color: #444242;
   padding: 30px 0;
-  font-size: 13px;
+  font-size: 22.5px;
   line-height: 20px;
   width: 100%;
   bottom: 0;
@@ -309,25 +345,18 @@ font-style: normal;
   padding: 100px 0 30px;
 }
 
+.footer-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; 
+  gap: 20px; 
+}
+
 .footer-col {
   padding: 0 15px;
   text-align: center;
 }
 
-.footer-col iframe {
-  height: 350px;
-  width: 600px ;
-  left: 0;
-  top: 0;
-  position: relative;
-  max-width: 100%;
-}
-
-.footer-row {
-  display: flex;
-  flex-wrap: wrap;
-  align-content: center;
-}
 
 .footer-col h4 {
   font-size: 27px;
@@ -375,4 +404,13 @@ font-style: normal;
   word-spacing: 2px;
   text-transform: capitalize;
   color: #fcfcfc;
+}
+
+.social-icons a {
+  color: #000000; 
+  font-size: 35px;
+}
+
+.social-icons a:hover {
+  color: #ffffff; 
 }

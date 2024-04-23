@@ -7,12 +7,22 @@
   <link rel="stylesheet" type="text/css" href="styles/reset.css">
   <link rel="stylesheet" type="text/css" href="styles/fonts.css"> 
   <link rel="stylesheet" type="text/css" href="styles/starter.css">
-  <link rel="stylesheet" type="text/css" href="styles/both.css"> 
   <script defer src="javascript/java.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100..900;1,100..900&family=Patrick+Hand&display=swap" rel="stylesheet">
+  
 
   <title> Kelly Hoang Portfolio </title>
 </head>
 
+<head> 
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>alert Button </title>
+</head>
 
 <body>
   <section id="Hero">
@@ -44,7 +54,7 @@
             <div class="about-text">
               <h1> About me! </h1>
               <p> Hi there! I'm Kelly Hoang I am a graphic designer based in Calgary. I am currently studying at SAIT, in the Graphic Design Program, in IDD. I love to work with clients of all, and I try to strive to surpass my client's expectations while incorporating my unique creative touch in design! </p>
-             <button class="contactbutton">Contact me!</button>
+             <button id="alertButton" class="contactbutton">Contact me!</button>
             </div>
           </div>
         </section>  
@@ -90,6 +100,7 @@
     </h3>
   </section>
 
+  <div class="vid-container">
  <div class="vid-card">
      <div class="card-video">
        <iframe 
@@ -104,10 +115,11 @@
       </iframe>
      </div>
      <div class="card-content">
-       <h3>Video Title 1</h3>
-       <p>Description of video 1 goes here.</p>
+       <h3> Lofi music </h3>
+       <p> It help you get into the mood!</p>
      </div>
   </div>
+  
  <div class="vid-card">
      <div class="card-video">
        <iframe 
@@ -122,10 +134,11 @@
        </iframe>
      </div>
      <div class="card-content">
-       <h3>Video Title 2</h3>
-       <p>Description of video 2 goes here.</p>
+       <h3>Montivation video </h3>
+       <p> Tips that help bring us back on track!</p>
      </div>
    </div>
+  </div>
 </section>
 
   <section id="accordion">
@@ -158,16 +171,27 @@
         <div class="footer-col">
           <h4>Link</h4>
           <ul>
-            <li><a href="#Hero"></i> Home</a></li>
-            <li><a href="#cards"></i>Shop</a></li>
-            <li><a href="#accordion"></i>Frequency Questions</a></li>
-            <li><a href>Contact Us</a></li>
+            <li><a href ="#content">About</a></li>
+            <li><a href ="#cards">Designs & Projects</a></li>
+            <li><a href ="#goals">Inspiration</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href ="#accordion"> Skills </a></li>
           </ul>
         </div>
         <div class="footer-col">
-          <h4>Find Us! </h4>
-          <iframe>
-          </iframe>
+          <h4>Contact me! </h4>
+          <div class="contact-info">
+            <p>Email: kelly.hoang@edu.sait.com</p>
+            <p>Follow me: 
+              <div class="container">
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook"></i></a>
+                    <a href="https://twitter.com/" target="_blank"><i class="fab fa-twitter"></i></a>
+                    <a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://www.pinterest.com/" target="_blank"><i class="fab fa-pinterest"></i></a>
+                </div>
+            </div>
         </div>
       </div>
     </div>
